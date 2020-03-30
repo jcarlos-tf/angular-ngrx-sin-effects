@@ -8,15 +8,15 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor( private router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  irUsuario( id:string ){
-    if( !id ){
+  irUsuario(id: string) {
+    if (!id) {
       return;
     }
-    this.router.navigate(['/usuario',id]);
+    this.router.navigate(['/usuario', id]);
   }
 }
